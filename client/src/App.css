@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+}
+
+
+.App {
+  text-align: center;
+}
+
+/* crypto items */
+.crypto-list-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.crypto-item-box {
+  background-color: rgba(0, 0, 0, .2);
+  width: 80%;
+  max-width: 80%;
+  height: 3%;
+  max-height: 3%;
+  display: table;
+  table-layout: fixed;
+  margin: 20px auto;
+  border: solid black 3px;
+  color: white;
+}
+
+.crypto-item-box:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.crypto-item-box-title {
+  pointer-events: none;
+  opacity: 100%;
+}
+
+.crypto-item-box .crypto-item {
+  padding: 5px;
+  margin: 5%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  width: fit-content;
+  block-size: fit-content;
+}
+
+.crypto-item-box .crypto-item.crypto-rank{
+  color: rgba(0, 0, 0, .7);
+}
+
+
+/* search-box */
+.search-box {
+  padding: 100px 0 50px;
+}
+
+.search-bar {
+  width: 30%;
+  height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.search-button {
+  background-color: #555555;
+  margin: 5px;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.search-button:hover {
+  opacity: 50%;
+}
+
+/* page buttons */
+
+.page-buttons {
+  width: 50px;
+  height: 30px;
+
+  margin: auto;
+  vertical-align: middle;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px 10px;
+}
+
+.page-button {
+  margin: 5px;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.page-button:hover {
+  opacity: 50%;
+}
+
+.page-back {
+  background-color: #f44336;
+}
+
+.page-home {
+  background-color: #008CBA;
+}
+
+.page-next {
+  background-color: #4CAF50;
+}
+
+.unclickable {
+  color: red;
+  opacity: 50%;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Crypto Page */
+
+.return-home {
+  position: absolute;
+  left: 9%;
+  top: 5%;
+  background-color: red;
+  margin: 5px;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.return-home:hover {
+  opacity: 50%;
+}
+
+.page-title-box {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.page-logo {
+  padding: 10px;
+  border-bottom: solid black;
+  border-radius: 100%;
+}
+
+.page-title {
+  border-bottom: solid black;
+  margin-bottom: 5px;
+}
+
+.page-data-box {
+  background-color: rgba(0, 0, 0, .2);
+  width: 80%;
+  max-width: 80%;
+  height: 3%;
+  max-height: 3%;
+  margin: 20px auto;
+  border: solid black 3px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-data-box-row {
+  display:table;
+  table-layout: fixed;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  
+}
+
+.page-data-row-title {
+  border-bottom: solid black;
+  font-weight: bold;
+  color: rgb(14, 17, 17);
+}
+
+.page-data {
+  padding: 5px;
+  margin: 5%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: top;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  block-size: fit-content;
+}
+
+.page-data-box-description {
+    border-top: solid black;
+    padding-bottom: 50px; 
+}
+
+.page-data-description {
+  padding: 20px;
+}
